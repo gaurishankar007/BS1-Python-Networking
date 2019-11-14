@@ -1,3 +1,5 @@
+# This is a just simple example of checking
+
 # This is the first question
 a = input("Enter the first number")
 b = input("Enter the second number")
