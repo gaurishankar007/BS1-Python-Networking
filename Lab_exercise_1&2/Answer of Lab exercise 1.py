@@ -22,8 +22,11 @@ print(f"Each students will get {x} apple and the remaining apple in the basket a
 a = int(input("Enter the number of minutes passed since midnight "))
 b = a // 60
 c = a % 60
-if b > 23:
-    b = b - 23
+for i in range(a):  # Here, for loop repeats the if condition the number of times you have entered.
+    if b > 23:
+        b = b - 23
+    else:
+        break  # Here, break stops the if condition when it becomes unsatisfied.
 print(str(b) + ':' + str(c))
 
 # 5.

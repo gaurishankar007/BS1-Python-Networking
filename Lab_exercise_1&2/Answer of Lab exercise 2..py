@@ -60,6 +60,21 @@ elif a < 0:
 else:
     print("Zero")
 
+# 6.
+a = input("Enter an integer number...")
+print(a[-1])
+
+# 7.
+a = input('Enter a positive real number...')
+
+
+# 8.
+x = 0
+for i in range(3):
+    a = int(input("Enter a three digit number..."))
+    x = x + a
+print(x)
+
 # 9.
 a = int(input("Enter the year"))
 if a % 4 == 0 and a % 100 != 0:
@@ -68,3 +83,43 @@ elif a % 400 == 0:
     print("LEAP YEAR")
 else:
     print("COMMON YEAR")
+
+# 10.
+a = int(input("Enter the first integer..."))
+b = int(input("Enter the second integer..."))
+c = int(input("Enter the third integer..."))
+if a == b or a == c or b ==c:
+    print(0)
+else:
+    print(f'Sum = {a + b + c}')
+
+# 11.
+a = 10**3
+print(f"The result of 10**3 is {a}.")
+
+# 12.
+x = 5
+x += 3
+print(f'The value of x after we run x+=3 is {x}')
+
+# 13.
+print(f'The result of APPLE > apple is {"APPLE" > "apple"}.')
+
+# 14.
+print(f"The result of float(1) is {float(1)}")
+
+# 15.
+a = 2
+b = 3
+c = 4
+d = 3
+print(f'a) {a == b}')
+print(f"b) {a != d}")
+print(f"c) {b == d}")
+print(f"d) {a != c}")
+print(f"e) {a + c}")
+print(f"f) {b / d}")
+print(f"g) {b > a}")
+print(f"h) {a < d}")
+print(f"i) {b-a == c-b}")
+print(f"j) {b >= d}")

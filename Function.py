@@ -99,3 +99,6 @@ for j in range(len(M[4])):
         c = c + M[4][j]
 d = c / (len(M[0]) - 1)
 print(f'The total mask of ben is {c} and his average mask is {d}.')
+
+
+
