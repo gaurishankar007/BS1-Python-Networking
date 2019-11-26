@@ -100,5 +100,16 @@ for j in range(len(M[4])):
 d = c / (len(M[0]) - 1)
 print(f'The total mask of ben is {c} and his average mask is {d}.')
 
+# Write a function that gives sum of all the odd number up to the number you have given
+def dog(a):
+    sum = a
+    return sum
+x = int(input("Enter the number up to which you want the sum of the odd numbers..."))
+y = 0
+for i in range(x + 1):
+    if i % 2 != 0:
+        y = y + i
+z = dog(y)
+print(y)
 
 
