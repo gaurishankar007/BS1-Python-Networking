@@ -112,4 +112,35 @@ for i in range(x + 1):
 z = dog(y)
 print(y)
 
+# Finding Factorial of a number using Function Recursion
+def factorial(x):
+    if x == 1:
+        return x
+    else:
+        return x * factorial(x - 1)
+P = int(input("Enter the number of which you want to calculate the factorial..."))
+if P < 0:
+    print("Murkha Manushya! don't you know that the factorial of negative number doesn't exist, Aahahahha.")
+elif P == 0:
+    print("The factorial of 0 is 1.")
+else:
+    print(f"The factorial of {P} is {factorial(P)}.")
+
+# Python program to display the Fibonacci sequence(It goes from 0 to 50)
+def fibo(n):
+    if n <= 1:
+        return n
+    else:
+        return (fibo(n - 1) + fibo(n - 2))
+Number_of_n= 10
+# check if the number of terms is valid
+if Number_of_n <= 0:
+    print("Please enter a positive integer")
+else:
+    print("Fibonacci sequence:")
+    for i in range(Number_of_n):
+        print(fibo(i))
+
+
+
 

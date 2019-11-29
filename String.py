@@ -39,3 +39,4 @@ E = D.replace("#", " ")
 print(E)
 F = B.split(" ")   # Splitting the every word of the sentence and putting them in a list
 print(F)
+

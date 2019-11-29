@@ -1,0 +1,8 @@
+printing Numbers From 0 T0 4 in a line.
+01234
+Printing Numbers From 0 To 4 line by line.
+0
+1
+2
+3
+4
