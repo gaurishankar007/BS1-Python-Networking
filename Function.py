@@ -131,7 +131,7 @@ def fibo(n):
     if n <= 1:
         return n
     else:
-        return (fibo(n - 1) + fibo(n - 2))
+        return fibo(n - 1) + fibo(n - 2)
 Number_of_n= 10
 # check if the number of terms is valid
 if Number_of_n <= 0:
@@ -140,6 +140,46 @@ else:
     print("Fibonacci sequence:")
     for i in range(Number_of_n):
         print(fibo(i))
+
+# Printing the given index of number from the Fibonacci Series
+# In this case the starting point of the fibonacci series is '1' but not '0'
+# Because we haven't given input to start from '0'
+# The Fibonacci Series are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,.........
+def fibo1(a):
+    if a == 0 or a == 1:
+        return a
+    else:
+        return fibo1(a - 1) + fibo1(a - 2)
+n = int(input("Enter the index of the number in fibonacci series..."))
+if n < 0:
+    print("Please don't enter negative integers.")
+else:
+    print(fibo1(n))
+
+# printing Fibonacci Series as per as the user range like up to 10 number of Fibonacci Series
+def fibo2(x):
+    if x == 0 or x == 1:
+        return x
+    else:
+        return fibo2(x - 1) + fibo2(x - 2)
+a = int(input("Enter '0' or '1' from where you want to start the fibonacci series...."))
+b = int(input("Enter the number of fibonacci series you want...."))
+if b < 0:
+    print("Don't enter a negative integer.")
+else:
+    if a == 1:
+        print("Your required fibonacci series is:")
+        for i in range(a, b + 1):
+            print(i, ':', fibo2(i))
+    else:
+        print("Your required fibonacci series is:")
+        for i in range(a, b):
+            print(i + 1, ':', fibo2(i))
+
+
+
+
+
 
 
 

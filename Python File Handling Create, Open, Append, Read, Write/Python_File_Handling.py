@@ -1,6 +1,9 @@
+# you can not write and read at the same time in the same txt file
+
+# In all case the '+' sign means to create a new file if it does not exist
 # Creating txt file using python programing language
 X = open("A_Text_File.txt", "w+")
-X.write("Creating txt file using python programing language")
+X.write("Creating txt file using python programing language \n" "Hahahahha")  # "\n" makes one line space
 X.close()
 
 # Create a file name file.txt inside the python project folder you are working on,
@@ -34,3 +37,7 @@ for k in range(5):
     A.write(str(k))
     A.write("\n")
 A.close()
+
+# Append in python file handling
+Q = open("TextFile2.txt", "+a")
+Q.write("Practising append \n" "Does this worked?\n" "Yeah! Man,this worked.")

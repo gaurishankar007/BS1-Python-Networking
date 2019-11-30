@@ -62,19 +62,14 @@ for j in A:
     print(j)
 
 # 8.
-def fibo(n):
-    if n <= 1:
+def fibonacci(n):
+    if n == 0 or n == 1:
         return n
     else:
-        return (fibo(n - 1) + fibo(n - 2))
-Number_of_n= 10
-# check if the number of terms is valid
-if Number_of_n <= 0:
-    print("Please enter a positive integer")
-else:
-    print("Fibonacci sequence:")
-    for i in range(Number_of_n):
-        print(fibo(i))
+        return fibonacci(n - 1) + fibonacci(n - 2)
+x = 10
+for i in range(x):
+    print(fibonacci(i))
 
 # 9.
 def factorial(x):

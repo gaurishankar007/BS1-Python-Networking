@@ -1,4 +1,4 @@
-# get an input from user an capitalize all of them,
+ # get an input from user an capitalize all of them,
 # Similarly iterate them and print individually,
 A = input("Enter a word..")
 print(len(A))  # print the number of letter in the word(it will also count the space between the two words)
