@@ -15,3 +15,16 @@ b = 5
 (a, b) = (b, a)
 print(a)
 print(b)
+# Creating colon of a tuple
+Tuple = (78, False, 99.99, [], "I")
+from copy import deepcopy
+New_Tuple = deepcopy(Tuple)
+New_Tuple[3].append("Gauri")
+New_Tuple[3].append(358)
+print(New_Tuple)
+
+#
+B = ("a")
+print(B)  # It will print 'a' only not ("a") because B is string not tuple until you gave a comma at the end in this case
+C = ("a",)
+print(C)

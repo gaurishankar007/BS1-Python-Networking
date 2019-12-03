@@ -8,12 +8,16 @@ for i in A[0]:
     print(i)
 for j in A[2]:
     print(j)
+# Printing the items from the list randomly
+import random
+print(random.choice(A))
+print(random.choice(A))
 # Finding how many items are in the list
 print(len(A))
 # Adding items in the list one by one
 A.append(6)
 print(A)
-for i in range(7, 16)
+for i in range(7, 16):
     A.append(i)
 # Replacing the item of the list with another one
 A[2] = 5
@@ -97,7 +101,7 @@ print(L2)
 # Adding a programing language in L3
 L3.append("c")
 print(L3)
-# Removing unwanted data from L2
+# Removing unwanted data from L1
 L1.remove("red")
 print(L1)
 # printing all the items of the list

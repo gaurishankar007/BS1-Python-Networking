@@ -1,4 +1,4 @@
- # get an input from user an capitalize all of them,
+# get an input from user an capitalize all of them,
 # Similarly iterate them and print individually,
 A = input("Enter a word..")
 print(len(A))  # print the number of letter in the word(it will also count the space between the two words)
@@ -20,7 +20,6 @@ print(c.count("S"))
 d = "".join(c)  # joining all the elements of the list and making it string again
 print(d)
 e = "*".join(c)  # joining all the element of the list with '*' and making it string again
-
 
 # Join different words together like:"Today is Monday"=>'TodayisMonday'
 # Replace Today with Yesterday
