@@ -2,7 +2,7 @@
 D = {"Roll No.": [1, 2, 3, 4, 5], "Name": ["Ram", "Syam", "Hari", "Sita", "Gita"]}
 print(D["Roll No."])
 print(D["Name"][3])
-# Printing the name of the students when the number is input
+# Printing the name of the students when the number is entered
 a = int(input("Enter the Roll No."))
 for i in range(len(D['Roll No.'])):
     if D['Roll No.'][i] == a:

@@ -9,7 +9,7 @@ print(A)
 # 2.
 F = int(input("Enter the temperature in fahrenheit"))
 C = (5 / 9) * (F - 32)
-print(f"{c} degree celsius.")
+print(f"{C} degree celsius.")
 
 # 3.
 X = 6
@@ -134,21 +134,21 @@ for i in range(len(B)):
         temp = B[8]
 print(f"The largest number in the list is {temp}.")
 for j in range(len(B)):
-    if B[0] < B[1] and B[0] < B[i]:
+    if B[0] < B[1] and B[0] < B[j]:
         temp = B[0]
-    elif B[1] < B[2]and B[1] < B[i]:
+    elif B[1] < B[2]and B[1] < B[j]:
         temp = B[1]
-    elif B[2] < B[3] and B[2] < B[i]:
+    elif B[2] < B[3] and B[2] < B[j]:
         temp = B[2]
-    elif B[3] < B[4] and B[3] < B[i]:
+    elif B[3] < B[4] and B[3] < B[j]:
         temp = B[3]
-    elif B[4] < B[5] and B[4] < B[i]:
+    elif B[4] < B[5] and B[4] < B[j]:
         temp = B[4]
-    elif B[5] < B[6] and B[5] < B[i]:
+    elif B[5] < B[6] and B[5] < B[j]:
         temp = B[5]
-    elif B[6] < B[7] and B[6] < B[i]:
+    elif B[6] < B[7] and B[6] < B[j]:
         temp = B[6]
-    elif B[7] < B[8] and B[7] < B[i]:
+    elif B[7] < B[8] and B[7] < B[j]:
         temp = B[7]
     else:
         temp = B[8]
@@ -270,3 +270,78 @@ if 10 in y:
 a = {1, 2, 3, 4, 5, 'A', 'B'}
 b = {2, 3, 5, 7, 11, 'B', 'C'}
 print(a.intersection(b))
+
+
+# DICTIONARY:
+# 1.
+D = {}
+
+# 2.
+D1 = {"Name": ["Bikesh", "Harichandra", "Gauri", "Prabesh"], "Roll No.": [47, 8, 34, 23]}
+D1["Age"] = [56, 58, 18, 256]
+print(D1)
+
+# 3.
+dic1 = {1: 10, 2: 20}
+dic2 = {3: 30, 4: 40}
+dic3 = {5: 50, 6: 60}
+for i in (dic2, dic3):
+    dic1.update(i)
+print(dic1)
+
+# 4.
+D4 = {'Name': "GauriShankarSharma", 'BankBalance': 10000000000}
+if "Name" in D4:
+    for i in D4.keys():
+        if i == "Name":
+            print(i)
+if "BankBalance" in D4:
+    for j in D4.keys():
+        if j != "Name":
+            print(j)
+if "Apple" in D4:
+    for i in D4.keys():
+        if i == "Gauri":
+            print(i)
+
+# 5.
+D5 = {"Student Name": ["Ram", "Memo", "Dita"], "Marks": [39, 46, 45]}
+for i, j in D5.items():
+    print(i + ":", j, end=', ')
+
+# 6.
+D6 = {}
+x = int(input("Enter the number from 1 to ..."))
+for i in range(1, x + 1):
+    a = i**2
+    D6.update({i: a})
+print(D6)
+
+# 7.
+D7 = {}
+for i in range(1, 16):
+    a = i**2
+    D7.update({i: a})
+print(D7)
+
+# 8.
+d1 = {"Fruits": 'Watermelon', "Roll No.": 21}
+d2 = {"Batch": "27A", "Subject": "Introduction to computing"}
+D8 = d1.copy()
+D8.update(d2)
+print(D8)
+
+# 9.
+D9 = {"Student Name": ["Ram", "Memo", "Dita"], "Marks": [39, 46, 45]}
+for i, j in D9.items():
+    print(i + ":", j, end=', ')
+
+# 10.
+a = 0
+b = 0
+D10 = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+for i in D10.keys():
+    a = a + i
+for j in D10.values():
+    b = b + j
+print(a + b)
