@@ -100,5 +100,35 @@ for i in range(len(Data["Roll No."])):
     if Data["Gender"][i] == "M":
         print((Data["Name"][i], Data["Marks"][i], Data["Gender"][i]))
 
+# Sorting the keys and the values of the dictionary by ascending and descending
+x = {"John": 18, "Ram": 25, "Ama": 34, "Don": 26, "john": 19, "don": 23, "ama":30, "ram": 28}
+
+# ASCENDING:
+# Sorting and printing the keys of the dictionary
+print(sorted(x))
+print(sorted(x.keys()))
+# Sorting and printing the values of dictionary
+print(sorted(x.values()))
+# Sorting and printing the keys of the dictionary along with the values
+print(sorted(x.items()))
+print(sorted(x.items(), key=lambda x: x[0]))
+# Sorting and printing the values of the dictionary along with the keys
+print(sorted(x.items(), key=lambda x: x[1]))
+
+# DESCENDING:
+# Sorting and printing the keys of the dictionary
+a = []
+for i in x.keys():
+    a.append(i)
+print(sorted(a, reverse=True))
+# Sorting and printing the values of the dictionary
+b =[]
+for j in x.values():
+    b.append(j)
+print(sorted(b, reverse=True))
+# Sorting and printing the keys of the dictionary along with the values
+print(sorted(x.items(), key=lambda x: x[0], reverse=True))
+# Sorting and printing the values of the dictionary along with the keys
+print(sorted(x.items(), key=lambda x: x[1], reverse=True))
 
 

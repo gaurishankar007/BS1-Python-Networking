@@ -274,7 +274,9 @@ print(a.intersection(b))
 
 # DICTIONARY:
 # 1.
-D = {}
+x = {"John": 18, "Ram": 25, "Ama": 34, "Don": 26, "john": 19, "don": 23, "ama":30, "ram": 28}
+print(sorted(x.items(), key=lambda x: x[1]))
+print(sorted(x.items(), key=lambda x: x[1], reverse=True))
 
 # 2.
 D1 = {"Name": ["Bikesh", "Harichandra", "Gauri", "Prabesh"], "Roll No.": [47, 8, 34, 23]}

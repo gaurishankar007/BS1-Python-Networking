@@ -162,6 +162,15 @@ for i in L1[:]:
             L.append(a)
 print(L)
 
+# Sorting and printing the items of the list by ascending and descending
+a = [1, 2, 5, 8, 9, 45, 67, 0, 3, 7, 4, 25]
+print(sorted(a))
+print(sorted(a, reverse=True))
+
+b =['a', 'N', 'g', 'A', 'h', 'mobile', 'vision', 'Mango', 'Car']
+print(sorted(b))
+print(sorted(b, reverse=True))
+
 
 
 

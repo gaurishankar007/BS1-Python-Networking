@@ -29,17 +29,16 @@ print(C1.Rupaiya)  # printing new balance
 class Student():
     def __init__(self, name):
         self.N = name
-        self.Marks = []
         self.a = int(input("Enter the marks you have scored in English."))
         self.b = int(input("Enter the marks you have scored in Nepali."))
         self.c = int(input("Enter the marks you have scored in Physics."))
 
-    def exposing_mask(self):
+    def exposing_marks(self):
         total = self.a + self.b + self.c
         average = total / 3
         print(f"Your Total Marks is {total} and Average Marks is {average}.")
 
-    def highest_mask(self):
+    def highest_marks(self):
         if self.a > self.b and self.a > self.c:
             temp = self.a, "in English"
         elif self.b > self.a and self.b > self.a:
@@ -50,8 +49,8 @@ class Student():
 
 
 St1 = Student("Ram")
-St1.exposing_mask()
-St1.highest_mask()
+St1.exposing_marks()
+St1.highest_marks()
 # Another Way
 class Student():
     def __init__(self, name, roll_no):
@@ -63,7 +62,7 @@ class Student():
     def identity(self):
         print(f"Name: {self.N} \n" f"Roll No.: {self.R}")
 
-    def get_mask(self):
+    def get_marks(self):
         for i in range(len(self.Subject)):
             m = int(input("Enter the marks you have scored in each subject "))
             self.User_Marks.append(m)
@@ -73,21 +72,21 @@ class Student():
         average = total / len(self.Subject)
         print(f"Total Marks: {total} \n" f"Average Marks: {average}")
 
-    def highest_mask(self):
+    def highest_marks(self):
         if self.User_Marks[0] > self.User_Marks[1] and self.User_Marks[0] > self.User_Marks[2]:
             temp = self.User_Marks[0], "in English."
         elif self.User_Marks[1] > self.User_Marks[0] and self.User_Marks[1] > self.User_Marks[0]:
             temp = self.User_Marks[1], "in Nepali."
         else:
             temp = self.User_Marks[2], "in Physics"
-        print(f"The highest mask is {temp}")
+        print(f"The highest marks is {temp}")
 
 
 S1 = Student("Gauri Shankar Sharma", 34)  # This is creation of object called x
 S1.identity()
-S1.get_mask()
+S1.get_marks()
 S1.display_marks()
-S1.highest_mask()
+S1.highest_marks()
 
 
 
