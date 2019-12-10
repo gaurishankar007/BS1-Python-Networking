@@ -88,6 +88,113 @@ S1.get_marks()
 S1.display_marks()
 S1.highest_marks()
 
+# Create  a class called 'First'
+# create two method, one for returning the class name like "this is first class",
+# another method to set the name from user 'cname' and should return the name
+# "this is the first class renamed to ____"
+# // naw call second class, and also return the date from second class
+# Create a class called 'Second'
+# Create a function to return current date, in the format of "sombar, mangshir 2076"
+# for this use a variable and set the time by yourself,
+
+
+class First():
+    def __init__(self, name):
+        self.N = name
+
+    def return_name(self):
+        return "This is the first class."
+
+    def return_custom_name(self):
+        return "This is the first class renamed to " + self.N + "."
+
+    def get_date_from_other_class(self):
+        a = Second()
+        b = a.get_date()
+        return "Date returned from first class using second object is :" + b
+
+
+class Second():
+    def __init__(self):
+        self.val = ""
+
+    def get_date(self):
+        return "Today's date is sombar, 23 mangshir, 2076."
+
+
+A = First("John")
+print(A.return_name())
+print(A.return_custom_name())
+print(A.get_date_from_other_class())
+
+# INHERITANCE AND SUBCLASS:
+class Course():
+    def __init__(self, name, course_name, course_code):
+        self.CN = course_name
+        self.CC = course_code
+        self.N = name
+        self.a = int(input("Enter the marks you have scored in English."))
+        self.b = int(input("Enter the marks you have scored in Nepali."))
+        self.c = int(input("Enter the marks you have scored in Physics."))
+
+    def get_info(self):
+        print(f"Name: {self.N} \n" f"Faculty: {self.CN} \n" f"Code: {self.CC}")
+
+
+class Student(Course):
+
+    def exposing_marks(self):
+        total = self.a + self.b + self.c
+        average = total / 3
+        print(f"Average Marks: {average}")
+
+
+St1 = Student("GauriShankarSharma", "Science", "38")
+St1.get_info()
+St1.exposing_marks()
+
+# Working on more than two class
+class Person():
+    def __init__(self, name, address, phone, age):
+        self.N = name
+        self.AD = address
+        self.P = phone
+        self.AG = age
+
+    def introduction(self):
+        return f" \n Hi!, my name is {self.N}. \n" f'Address: {self.AD}\n' f"Phone No.: {self.P} \n" f"Age: {self.AG}"
+
+
+class Teacher(Person):
+    def __init__(self, name, address, phone, age, subject):
+        Person.__init__(self, name, address, phone, age)
+        self.S = subject
+
+    def introduction1(self):
+        return f'Subject: {self.S}'
+
+
+class Student(Person):
+    def __init__(self, name, address, phone, age, class_section, roll_no, group):
+        Person.__init__(self, name, address, phone, age)
+        self.C = class_section
+        self.R = roll_no
+        self.G = group
+
+    def introduction2(self):
+        return f"Class-Section: {self.C} \n" f"Roll-No.: {self.R} \n" f"Group: {self.G}"
+
+
+P1 = Person('John', 'New york', 4635464463, 26)
+print(P1.introduction())
+
+T1 = Teacher('Munerilal', 'Saptari', 36458966, 34, 'Math')
+print(T1.introduction())
+print(T1.introduction1())
+
+S1 = Student('Gauri Shankar Sharma', 'Morang', 635465, 18, '27-A', 34, 'None')
+print(S1.introduction())
+print(S1.introduction2())
 
 
 
