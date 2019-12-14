@@ -2,7 +2,7 @@
 D = {"Roll No.": [1, 2, 3, 4, 5], "Name": ["Ram", "Syam", "Hari", "Sita", "Gita"]}
 print(D["Roll No."])
 print(D["Name"][3])
-# Printing the name of the students when the number is entered
+# Printing the name of the students when the roll no. is entered
 a = int(input("Enter the Roll No."))
 for i in range(len(D['Roll No.'])):
     if D['Roll No.'][i] == a:
@@ -84,7 +84,7 @@ for i in range(1, 6):
     G[i] = i ** 2
 print(G)
 
-# Create a dictionary, add datas like, roll no, name, marks,along with gender, now i want to print all the
+# Create a dictionary, add data like, roll no, name, marks,along with gender, now i want to print all the
 # names and marks whose gender is male, how would you do that?
 # Print only male data for if you are male print only female data if you are female
 R = int(input("inter the roll no."))

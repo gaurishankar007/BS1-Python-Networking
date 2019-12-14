@@ -55,7 +55,7 @@ else:
 def buha(a):
       aaha = a
       return aaha
-x = input("Enter a leter")
+x = input("Enter a letter")
 y = buha(x)
 if y.isupper():
     print("upper")

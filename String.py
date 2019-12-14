@@ -39,5 +39,11 @@ print(E)
 F = B.split(" ")   # Splitting the every word of the sentence and putting them in a list
 print(F)
 
+# Concatenating two strings to a third string
+S1 = 'Gauri '
+S2 = 'Shankar Sharma'
+S3 = S1.__add__(S2)
+print(S3)
+
 
 

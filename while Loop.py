@@ -76,3 +76,10 @@ while b < 5:
     a = b * a
     b = b + 1
 print(a)
+
+#
+A = 'abcdef'
+i = 'a'
+while i in A:
+    A = A[:-1]  # OR:- A = A[0 : -1]
+    print(i, end=" ")

@@ -196,6 +196,83 @@ S1 = Student('Gauri Shankar Sharma', 'Morang', 635465, 18, '27-A', 34, 'None')
 print(S1.introduction())
 print(S1.introduction2())
 
+# Create a class Animal, with function, and a variable with animal name,
+#         can breath,
+#         can run,
+#         can speak,
+# Create child class human,
+#      with one extra function, can think
+# Create child class to animal called dog
+#       with one extra function, is loyal
+# Now, using OOP, print, human can think, similarly human can breath, run and speak and aslo for dog,
+# print dog is loyal, and can breath run and speak, using concept of inheritance.
+
+
+class Animal():
+    def __init__(self, name):
+        self.N = name
+
+    def can_breath(self):
+        return f'\n{self.N} can breath.'
+
+    def can_run(self):
+        return f"{self.N} can run."
+
+    def can_speak(self):
+        return f"{self.N} can speak."
+
+
+class Human(Animal):
+
+    def can_think(self):
+        return f"{self.N} can think."
+
+
+class Dog(Animal):
+
+    def is_loyal(self):
+        return f"{self.N} is loyal."
+
+
+A1 = Animal("leopard")
+print(A1.can_breath())
+print(A1.can_run())
+print(A1.can_speak())
+
+H1 = Human("Brad")
+print(H1.can_breath())
+print(H1.can_run())
+print(H1.can_speak())
+print((H1.can_think()))
+
+D1 = Dog("Tom")
+print(D1.can_breath())
+print(D1.can_run())
+print(D1.can_speak())
+print(D1.is_loyal())
+
+#
+class Person():
+    def __init__(self, name, address, phone):
+        self.N = name
+        self.A = address
+        self.P = phone
+
+    def introduction(self):
+        return f"Hi, my name is {self.N}. \n" f'Address: {self.A}\n' f'Phone: {self.P}'
+
+
+class Teacher(Person):
+    def __init__(self, name, address, phone, subject):
+        Person.__init__(self, name, address, phone)
+        self.S = subject
+
+    def introduction(self):
+        return f'\nHi, my name is {self.N} and I am a teacher.\n' f'Address: {self.A}\n' f'Phone: {self.P}'
+
+
+T1 = Teacher("Ram", 'Kathmandu', 9834697156, 'Math')
+print(T1.introduction())
 
 
 

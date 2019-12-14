@@ -32,6 +32,12 @@ L2 = [4, 5]
 L3 = L1 + L2
 print(L3)
 
+# Some other inbuilt function in list
+A = [1, 2, 3, 4, 5]
+print(sum(A))  # Gives the sum of all the integer in the list
+print(max(A))  # Prints the maximum value of the list
+print(min(A))  # Prints the minimum value of the list
+
 # Checking whether a element is in the List or not
 L = ["apple", "orange", "Mango", "banana"]
 if "orange" in L:
