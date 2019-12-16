@@ -102,3 +102,15 @@ elif a == 7:
     print("Saturday and its holiday.")
 else:
     print("Error number.please Put number between 1-7.")
+
+# It will print nothing that means no output
+if None:
+    print("This is None statement.")
+
+# "if not" statement
+a = 10
+b = 20
+if not a > 10:
+    print(f"{a} is less than {b}.")
+else:
+    print(f"{b} is less than {a}.")

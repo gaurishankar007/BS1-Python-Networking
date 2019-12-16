@@ -32,6 +32,11 @@ L2 = [4, 5]
 L3 = L1 + L2
 print(L3)
 
+# Making empty list
+N = []
+print(N)
+O = list()
+print(O)
 # Some other inbuilt function in list
 A = [1, 2, 3, 4, 5]
 print(sum(A))  # Gives the sum of all the integer in the list

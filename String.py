@@ -45,5 +45,10 @@ S2 = 'Shankar Sharma'
 S3 = S1.__add__(S2)
 print(S3)
 
+# Printing some part of a string
+X = "Hello!"
+print(X[::])  # Printing all the string
+print(X[2::])  # Printing the string from the second indentation
+print(X[::-1])  # Reversing the string
 
 

@@ -83,3 +83,21 @@ i = 'a'
 while i in A:
     A = A[:-1]  # OR:- A = A[0 : -1]
     print(i, end=" ")
+
+# This prints 0, 1, 2 and 0
+i = 0
+while i < 3:
+    print(i)
+    i += 1
+else:
+    print(0)
+
+# This prints 0, 1, 2
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(0)

@@ -251,7 +251,7 @@ print(D1.can_run())
 print(D1.can_speak())
 print(D1.is_loyal())
 
-#
+# Polymorphism
 class Person():
     def __init__(self, name, address, phone):
         self.N = name

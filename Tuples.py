@@ -3,12 +3,20 @@ print(A)
 print(len(A))
 print(A[0])
 print(A[-1])
+
 # A[1] = 4  # gives error, can’t modify tuples
 # A.append(12)  # error, can’t modify tuples
 for i in A:
     print(i)
 for j in range(len(A)):
     print(A[j])
+
+#
+B = (1, 2, 3, 4, 5)
+print(sum(B))
+print(max(B))
+print(min(B))
+
 # exchanging the value of a and b
 a = 4
 b = 5
