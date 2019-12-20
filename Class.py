@@ -268,11 +268,88 @@ class Teacher(Person):
         self.S = subject
 
     def introduction(self):
-        return f'\nHi, my name is {self.N} and I am a teacher.\n' f'Address: {self.A}\n' f'Phone: {self.P}'
+        return f'\nHi, my name is {self.N} and I am a teacher.\n' f'Address: {self.A}\n' f'Phone: {self.P}\n' f'Subject: {self.S}'
 
 
 T1 = Teacher("Ram", 'Kathmandu', 9834697156, 'Math')
 print(T1.introduction())
+
+# Create a class called Calculation and create a function add
+# implement polymorphism in function where two or three parameter can be passed
+
+
+class Calculation:
+
+    def add(self, a, b, c=0):  # implementing polymorphism in the function
+        sum = a + b + c
+        return sum
+
+
+A = Calculation()
+print(A.add(1, 2, 3))
+
+
+#
+class Country():
+    def __init__(self, capital_city, language):
+        self.C = capital_city
+        self.L = language
+
+    def capital_city(self):
+        return f"My country's capital city is {self.C}."
+
+    def language(self):
+        return f"My country's language is {self.L}"
+
+
+class Nepal(Country):
+    def __init__(self, capital_city, language, status):
+        Country. __init__(self, capital_city, language)
+        self.S = status
+
+    def intro(self):
+        return f"Nepal's capital city is {self.C}."
+
+    def language(self):
+        return f"Nepal's national language is Nepali."
+
+    def status(self):
+        return f"Nepal is an {self.S} country."
+
+
+class America(Country):
+    def __init__(self, capital_city, language, status):
+        Country.__init__(self, capital_city, language)
+        self.S = status
+
+    def intro(self):
+        return f"\nAmerica's capital city is {self.C}."
+
+    def language(self):
+        return f"America's national language is Nepali."
+
+    def status(self):
+        return f"America is an {self.S} country."
+
+
+N1 = Nepal("Kathmandu", "Nepali", "underdeveloped")
+print(N1.intro())
+print(N1.language())
+print(N1.status())
+
+A1 = America("New york", "English", "developed")
+print(A1.intro())
+print(A1.language())
+print(A1.status())
+
+
+
+
+
+
+
+
+
 
 
 
