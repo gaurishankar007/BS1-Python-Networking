@@ -343,6 +343,55 @@ print(A1.language())
 print(A1.status())
 
 
+# Access Modifiers
+class Human:
+    def __init__(self, name, age, skill, education):
+        self.N = name
+        self.A = age
+        self._S = skill
+        self.__E = education  # Private attribute which can not be used in the subclasses of a class
+
+    def intro(self):
+        return f"\nName: {self.N}.\n" f"Age: {self.A} years old.\n" f"Skill: {self._S}.\n" f"Education: {self.__E}."
+
+
+Civil = Human("John", 26, 'Programmer', 'BSc (Hons) Computing')
+print(Civil.intro())
+
+
+class Animal(Human):
+    def __init__(self, name, age, skill, education):
+        Human.__init__(self, name, age, skill, education)
+
+    def intro(self):
+        return f"\nName: {self.N}.\n" f"Age: {self.A} years old.\n" f"Skill: {self._S}."  # f"Education: {self.__E}"
+
+# Even though you have entered the education, it won't be printed because it is the private attribute
+# But you most have to write it while defining the object only if you have entered it in the constructor
+# you can remove the 'education' from the constructor if you want
+
+
+Dog = Animal("Tom", 5, "Detector", " ")
+print(Dog.intro())
+
+
+class Bike(Animal):
+    def __init__(self, name, age, skill, education):
+        Animal.__init__(self, name, age, skill, education)
+
+    def intro(self):
+        return f"\nName: {self.N}.\n" f"Age: {self.A} years old."  # f"Skill: {self._S}\n" f"Education: {self.__E}"
+
+# Even though the "skill" and 'education' is entered at the constructor, it won't be printed
+# Because "skill" is protected attribute and  'education' is private attribute
+# you can remove the 'skill' and 'education' from the constructor
+
+
+Duke = Bike('Duke 350', 15, ' ', ' ')
+print(Duke.intro())
+
+
+
 
 
 

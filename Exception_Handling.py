@@ -6,6 +6,7 @@ try:
 except:
     print("Invalid value for radius.")
 
+
 # In this case, when the input is invalid then 'while loop' will again ask to enter valid value until value is correct
 success = False
 while success == False:
@@ -37,3 +38,14 @@ while S == True:
         S = False
     except:
         print("Invalid input.")
+
+
+# Use exception handling to report out of bound error also for multiple error
+# print(5) // this gives error now to use try catch to handle these errors
+try:
+    b = 5 / 0
+    a = [1, 2, 3]
+    print(a[5])
+
+except(IndexError, ZeroDivisionError):
+    print("Invalid input")
