@@ -117,3 +117,7 @@ elif not b > a and b > c:
     print(f"{b} is not the greatest number.")
 else:
     print(f"{c} is the greatest number.")
+
+# "If None" statement
+if None:  # It will print nothing
+    print("This is a None statement")
