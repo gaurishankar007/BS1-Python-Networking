@@ -20,6 +20,7 @@ print(c.count("S"))
 d = "".join(c)  # joining all the elements of the list and making it string again
 print(d)
 e = "*".join(c)  # joining all the element of the list with '*' and making it string again
+print(e)
 
 # Join different words together like:"Today is Monday"=>'TodayisMonday'
 # Replace Today with Yesterday

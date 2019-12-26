@@ -110,7 +110,10 @@ if None:
 # "if not" statement
 a = 10
 b = 20
-if not a > 10:
-    print(f"{a} is less than {b}.")
+c = 30
+if not a > b and a > c:
+    print(f"{a} is not the greatest number.")
+elif not b > a and b > c:
+    print(f"{b} is not the greatest number.")
 else:
-    print(f"{b} is less than {a}.")
+    print(f"{c} is the greatest number.")

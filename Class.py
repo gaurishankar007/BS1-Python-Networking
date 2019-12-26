@@ -348,7 +348,7 @@ class Human:
     def __init__(self, name, age, skill, education):
         self.N = name
         self.A = age
-        self._S = skill
+        self._S = skill # protected attribute which can be used only up to one level of subclass
         self.__E = education  # Private attribute which can not be used in the subclasses of a class
 
     def intro(self):

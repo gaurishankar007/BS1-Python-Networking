@@ -28,7 +28,7 @@ else:
 # Adding both keys and values in the dictionary And printing them separately
 DS = {"Roll No.": [1, 2, 3, 4, 5], "Name": ["Ram", "Syam", "Hari", "Sita", "Gita"]}
 print(DS)
-DS["Age"] = ["A", "B", "c", "D", "E"]
+DS["Age"] = ["A", "B", "C", "D", "E"]
 print(DS)
 for i, j in DS.items():  # To print both keys and values
     print(i, j)
@@ -99,6 +99,7 @@ Data = {"Roll No.": [1, 2, 3, 4, 5], "Name": ["Shirsak", "Anuragh", "Gauri", "Bi
 for i in range(len(Data["Roll No."])):
     if Data["Gender"][i] == "M":
         print((Data["Name"][i], Data["Marks"][i], Data["Gender"][i]))
+
 
 # Sorting the keys and the values of the dictionary by ascending and descending
 x = {"John": 18, "Ram": 25, "Ama": 34, "Don": 26, "john": 19, "don": 23, "ama":30, "ram": 28}

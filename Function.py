@@ -18,17 +18,6 @@ a = 3
 b = 7
 print(lol())
 
-# Printing the numbers from the list one by one
-A = [[1, 2, 3, 4], [5, 6, 7, 8, 9]]
-for i in range(len(A)):
-    for j in range(len(A[i])):
-        print(A[i][j])
-# Another Way
-B = [[2, 3, 4], [6, 7, 8]]
-for row in B:
-    for element in row:
-        print(element)
-
 # Write as function to pass a no and return weather it is odd or even
 def noob(a, b):
     sum = a + b
@@ -62,44 +51,6 @@ if y.isupper():
 else:
     print("lower")
 
-# Write a function print a matrix based on user like if user types 3 row and 3 column
-# You should print 3*3 matrix with all 1's
-a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
-for i in range(len(a)):
-    for j in range(len(a[i])):
-        print(a[i][j], end=' ')
-    print()
-
-# Adding lists in an empty list with elements
-A = []
-for i in range(3):
-    A.append([])
-    for j in range(3):
-        A[i].append(1)
-print(A)
-
-# printing average masks
-M = [['name', 'maths', 'english', 'physics', 'com', 'nepali'],
-     ['john', 88, 86, 76, 66, 76],
-     ['sam', 77, 67, 87, 67, 55],
-     ['anna', 67, 65, 67, 76, 65],
-     ['ben', 87, 78, 67, 77, 57],
-     ['jeff', 90, 80, 79, 88, 70]]
-# Printing Average Mask In Math
-a = 0
-for i in range(len(M)):
-    if i != 0:
-        a = a + M[i][1]
-b = a / (len(M)-1)
-print(f'The average mask in math of all students is {b}.')
-# Printing Total and Average Mask of ben
-c = 0
-for j in range(len(M[4])):
-    if j != 0:
-        c = c + M[4][j]
-d = c / (len(M[0]) - 1)
-print(f'The total mask of ben is {c} and his average mask is {d}.')
-
 # Write a function that gives sum of all the odd number up to the number you have given
 def dog(a):
     sum = a
@@ -112,7 +63,10 @@ for i in range(x + 1):
 z = dog(y)
 print(y)
 
-# Finding Factorial of a number using Function Recursion
+
+
+# FUNCTION RECURSION:
+# Finding Factorial of a number using
 def factorial(x):
     if x == 1:
         return x
@@ -128,7 +82,7 @@ else:
 
 # Python program to display the Fibonacci sequence(It goes from 0 to 50)
 def fibo(n):
-    if n <= 1:
+    if n == 0 or n == 1:
         return n
     else:
         return fibo(n - 1) + fibo(n - 2)
@@ -146,7 +100,7 @@ else:
 # Because we haven't given input to start from '0'
 # The Fibonacci Series are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,.........
 def fibo1(a):
-    if a == 0 or a == 1:
+    if a <= 1:
         return a
     else:
         return fibo1(a - 1) + fibo1(a - 2)

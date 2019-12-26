@@ -29,8 +29,8 @@ print(b)
 # Same Question but a bit different in answer
 a = ""
 for x in range(3):
-    x = input("Enter the numbers ")
-    a = a + x
+    b = input("Enter the numbers ")
+    a = a + b
     print(a)
 
 # printing the numbers in the required interval

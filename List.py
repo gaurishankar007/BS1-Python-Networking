@@ -8,6 +8,18 @@ for i in A[0]:
     print(i)
 for j in A[2]:
     print(j)
+
+# Printing the numbers from the list one by one
+A = [[1, 2, 3, 4], [5, 6, 7, 8, 9]]
+for i in range(len(A)):
+    for j in range(len(A[i])):
+        print(A[i][j])
+# Another Way
+B = [[2, 3, 4], [6, 7, 8]]
+for row in B:
+    for element in row:
+        print(element)
+
 # Printing the items from the list randomly
 import random
 print(random.choice(A))
@@ -154,22 +166,15 @@ L2 = ['a', 'b', 'c', 'd', 'e']
 for i in L1[:]:
     for j in L2:
         a = i + j
-        if i == '1':
-            if j == 'a':
-                L.append(a)
-        elif i == "2":
-            if j == 'b':
-                L.append(a)
-        elif i == "3":
-            if j == 'c':
-                L.append(a)
-        elif i == "4":
-            if j == 'd':
-                L.append(a)
-        elif i == "5":
-            if j == 'e':
-                L.append(a)
-        else:
+        if i == '1' and j == 'a':
+            L.append(a)
+        elif i == "2" and j == 'b':
+            L.append(a)
+        elif i == "3" and j == 'c':
+            L.append(a)
+        elif i == "4" and j == 'd':
+            L.append(a)
+        elif i == "5" and j == 'e':
             L.append(a)
 print(L)
 
@@ -182,6 +187,44 @@ b =['a', 'N', 'g', 'A', 'h', 'mobile', 'vision', 'Mango', 'Car']
 print(sorted(b))
 print(sorted(b, reverse=True))
 
+
+# Write a function print a matrix based on user like if user types 3 row and 3 column
+# You should print 3*3 matrix with all 1's
+a = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end=' ')
+    print()
+
+# Adding lists in an empty list with elements
+A = []
+for i in range(3):
+    A.append([])
+    for j in range(3):
+        A[i].append(1)
+print(A)
+
+# printing average masks
+M = [['name', 'maths', 'english', 'physics', 'com', 'nepali'],
+     ['john', 88, 86, 76, 66, 76],
+     ['sam', 77, 67, 87, 67, 55],
+     ['anna', 67, 65, 67, 76, 65],
+     ['ben', 87, 78, 67, 77, 57],
+     ['jeff', 90, 80, 79, 88, 70]]
+# Printing Average Mask In Math
+a = 0
+for i in range(len(M)):
+    if i != 0:
+        a = a + M[i][1]
+b = a / (len(M)-1)
+print(f'The average mask in math of all students is {b}.')
+# Printing Total and Average Mask of ben
+c = 0
+for j in range(len(M[4])):
+    if j != 0:
+        c = c + M[4][j]
+d = c / (len(M[0]) - 1)
+print(f'The total mask of ben is {c} and his average mask is {d}.')
 
 
 
