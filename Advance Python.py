@@ -73,3 +73,20 @@ from random import randint
 L6 = [randint(1, 10) for i in range(5)]
 print(L6)
 
+
+# STRING FORMATTING:
+Name = "John"
+Age = 22
+print("Hello %s, you are %s years old." % (Name, Age))  # Hello John, you are 22 years old.
+Weight = 77
+print("Name: %s, Age: %s, Weight: %s" % (Name, Age, Weight))  # Name: John, Age: 22, Weight: 77
+
+N = "John the don"
+A = 30
+W = 72
+print("name: %s, age: %d, weight: %d" % (N, A, W))  # name: John the don, age: 30, weight: 72
+print("name: %s, age: %d, weight: %04d" % (N, A, W))  # name: John the don, age: 30, weight: 0072
+
+pi = 3.141592653589793
+print("pi is %.2f" % pi)  # pi is 3.14
+print("pi is %.4f" % pi)  # pi is 3.1416

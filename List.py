@@ -102,9 +102,14 @@ for i in range(-3, 0):
     L1.pop(i)
 print(L1)
 #
-L = [6, 3, 6, 8, 9, 2, 1,3]
-L.remove(3)
-print(L1)
+LL = [6, 3, 6, 8, 9, 2, 1,3]
+LL.remove(3)
+print(LL)
+# Clearing all the elements of the list
+Lis = [1, 3.6, 8, "Hah", True]
+Lis.clear()
+print(Lis)
+
 # Removing odd numbers from the list
 L1 = [1, 2, 3,4, 5, 6, 7, 8, 9]
 for i in L1:

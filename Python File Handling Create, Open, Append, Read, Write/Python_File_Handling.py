@@ -38,7 +38,7 @@ for k in range(5):
 A.close()
 
 # Append in python file handling
-Q = open("TextFile2.txt", "+a")
+Q = open("TextFile2.txt", "a+")
 Q.write("Practising append \n" "Does this worked?\n" "Yeah! Man,this worked.")
 
 
