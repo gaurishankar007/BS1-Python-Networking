@@ -41,11 +41,11 @@ mainloop()
 from tkinter import *
 Master = Tk()
 var1 = IntVar()
-Checkbutton(Master, text='Male', variable=var1).grid(row=0, sticky=W)
+Checkbutton(Master, text='Male', variable=var1, activebackground="yellow", activeforeground='red', font=("Arial", 10, 'bold')).grid(row=0, sticky=W)
 var2 = IntVar()
 Checkbutton(Master, text='Other', variable=var2, command=Master.destroy).grid(row=2)
 var3 = IntVar()
-Checkbutton(Master, text="Female", variable=var3, command=Master.destroy).grid(row=1, sticky=W)
+Checkbutton(Master, text="Female", variable=var3, background="pink", foreground="blue", font=("Arial Black", 12, "normal"), command=Master.destroy).grid(row=1, sticky=W)
 mainloop()
 
 from tkinter import *
