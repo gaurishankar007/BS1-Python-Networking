@@ -72,6 +72,5 @@ E.pencolor("black")
 E.penup()
 E.goto(0, 150)
 E.pendown()
-E.write("FERRARI", True, 'right', font=("Arial", 20, "bold"))
-
+E.write("FERRARI", True, 'right', font=("Arial Black", 20, "normal"))
 turtle.done()
