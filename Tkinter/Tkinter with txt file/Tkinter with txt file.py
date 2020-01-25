@@ -1,6 +1,7 @@
 from tkinter import *
 Boss = Tk()
 Boss.title('Give your name and contact number one by one, hahahahahaha!')
+Boss.geometry("")
 Boss.configure(bg="dark green")
 
 Name = Label(Boss, text='Full Name').pack()
