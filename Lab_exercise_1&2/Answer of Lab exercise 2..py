@@ -66,6 +66,18 @@ print(a[-1])
 
 # 7.
 a = input('Enter a positive real number...')
+b = list(a)
+c = len(b)
+d = []
+e = []
+for i in range(c):
+    if b[i] is '.':
+        d.append(i)
+f = d[0] + 1
+while f < c:
+    e.append(b[f])
+    f = f + 1
+print("The fractional part of the real number is " + str(''.join(e)) + ".")
 
 
 # 8.
