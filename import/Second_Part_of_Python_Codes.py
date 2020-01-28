@@ -1,4 +1,4 @@
-import Testing1
+import First_Part_of_Python_Codes
 a = input("Enter the operation you want to be done ")
 p = int(input("Enter the first number "))
 q = int(input('Enter the second number '))
@@ -13,13 +13,13 @@ v = int(input("Enter the first number "))
 w = int(input('Enter the second number '))
 
 if a == "+":
-    print(Testing1.add(p, q))
+    print(First_Part_of_Python_Codes.add(p, q))
 elif a == '-':
-    print(Testing1.subtract(x, y))
+    print(First_Part_of_Python_Codes.subtract(x, y))
 elif a == '*':
-    print(Testing1.multiply(r, s))
+    print(First_Part_of_Python_Codes.multiply(r, s))
 
 elif a == '/':
-    print(Testing1.divide(v, w))
+    print(First_Part_of_Python_Codes.divide(v, w))
 
 
