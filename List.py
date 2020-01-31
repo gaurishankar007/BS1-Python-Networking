@@ -38,7 +38,7 @@ print(A)
 L = [2, 1]
 L.extend([0, 6])
 print(L)
-# Adding two list
+# Concatenating two list
 L1 = [8, 9]
 L2 = [4, 5]
 L3 = L1 + L2
@@ -105,7 +105,7 @@ print(L1)
 LL = [6, 3, 6, 8, 9, 2, 1,3]
 LL.remove(3)
 print(LL)
-# Clearing all the elements of the list
+# Removing all the elements of the list
 Lis = [1, 3.6, 8, "Hah", True]
 Lis.clear()
 print(Lis)

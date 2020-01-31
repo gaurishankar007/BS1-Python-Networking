@@ -18,6 +18,16 @@ while success == False:
     except:
         print("Invalid value for radius.")
 
+#
+a = True
+while a == True:
+    try:
+        a = int(input("Enter a number"))
+        print(a / a)
+        a = False
+    except:
+        print("Invalid Inpuat.")
+
 
 # Create a function divide with two parameter a, b
 # now it should return the divided value like a/b,

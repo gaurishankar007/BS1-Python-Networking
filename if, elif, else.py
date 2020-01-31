@@ -118,6 +118,13 @@ elif not b > a and b > c:
 else:
     print(f"{c} is the greatest number.")
 
-# "If None" statement
-if None:  # It will print nothing
-    print("This is a None statement")
+#
+L = [1, 2, "S"]
+if 'S' in L:
+    print("S is present in the list.")
+if "T" not in L:
+    print("T is not present in the list.")
+if L is list:
+    print("L is a list.")
+if L is not tuple:
+    print("L is not a tuple.")

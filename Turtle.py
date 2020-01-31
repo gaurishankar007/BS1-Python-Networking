@@ -44,5 +44,16 @@ D.goto(125, -175)
 D.down()
 for k in range(5):
     D.circle(10*k)
+
+E = turtle.Turtle()
+E.up()
+E.setx(-300)
+E.down()
+for i in range(1, 10):
+    E.circle(10*i)
+    E.up()
+    E.sety((10*i)*-1)
+    E.down()
+
 # This makes the picture not to stop from being shown up at the screen and also stops the turtle codes from being run written below it.
 turtle.done()

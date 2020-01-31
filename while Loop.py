@@ -84,6 +84,19 @@ while i in A:
     A = A[:-1]  # OR:- A = A[0 : -1]
     print(i, end=" ")
 
+B = 'abcdef'
+j = 'a'
+while j in B:
+    B = B[:-2]  # OR:- A = A[0 : -1]
+    print(j, end=" ")
+
+C = 'abcdef'
+K = 'a'
+while K in C:
+    C = C[:-3]  # OR:- A = A[0 : -1]
+    print(K, end=" ")
+
+
 # This prints 0, 1, 2 and 0
 i = 0
 while i < 3:

@@ -25,6 +25,29 @@ print(C1.Rupaiya)  # Prints the final amount
 C1.Rupaiya = 9000  # Setting new balance
 print(C1.Rupaiya)  # printing new balance
 
+#
+class Bank():
+    def __init__(self, name, balance):
+        self.N = name
+        self.B = balance
+        self.I = input("Enter the name of your bank ")
+
+    def withdraw(self, amount):
+        self.B -= amount
+        return f"You have withdraw ${amount} and ${self.B} is left in your bank account."
+
+    def deposit(self, amount):
+        self.B += amount
+        return f"You have deposited ${amount} and ${self.B} is new balance of your bank account."
+
+
+First_Customer = Bank("Gauri Shankar Sharma", 55680000)
+print(First_Customer.withdraw(130900))
+print(First_Customer.deposit(56080))
+First_Customer.B = 1000
+print(First_Customer.N + " has $" + str(First_Customer.B) + " in " + First_Customer.I + ".")
+
+
 # Create a class student and find the total and average masks, highest mask and the topper name
 class Student():
     def __init__(self, name):
@@ -162,7 +185,7 @@ class Person():
         self.AG = age
 
     def introduction(self):
-        return f" \n Hi!, my name is {self.N}. \n" f'Address: {self.AD}\n' f"Phone No.: {self.P} \n" f"Age: {self.AG}"
+        return f"\nHi!, my name is {self.N}. \n" f'Address: {self.AD}\n' f"Phone No.: {self.P} \n" f"Age: {self.AG}"
 
 
 class Teacher(Person):
