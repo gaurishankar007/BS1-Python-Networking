@@ -3,23 +3,23 @@ from tkinter import *
 
 class Gui:
     def __init__(self, root):
-        self.root = Root
-        self.label = Label(Root, text='Press the buttons.')
+        self.Root = root
+        self.label = Label(root, text='Press the buttons.')
         self.label.pack()
-        Button(self.root, text='1', command=lambda: self.pressed(1)).pack(side=LEFT)
-        Button(Root, text='2', command=lambda: self.pressed(2)).pack()
-        Button(Root, text='3', command=lambda: self.pressed(3)).pack(side=RIGHT)
+        Button(self.Root, text='1', command=lambda: self.pressed(1)).pack(side=LEFT)
+        Button(root, text='2', command=lambda: self.pressed(2)).pack()
+        Button(root, text='3', command=lambda: self.pressed(3)).pack(side=RIGHT)
 
     def pressed(self, number):
-        self.label.config(text='You have pressed Button ' + str(number))
+        self.label.config(text=f'You have pressed Button {str(number)}.' )
         # same as above [self.label['text'] = 'You have pressed Button ' + str(number)]
 
 
-Root = Tk()
-Root.title("Hello! World")
-Root.configure(bg="dark blue")
-gui = Gui(Root)
-Root.mainloop()
+root = Tk()
+root.title("Hello! World")
+root.configure(bg="dark blue")
+gui = Gui(root)
+root.mainloop()
 
 
 #
