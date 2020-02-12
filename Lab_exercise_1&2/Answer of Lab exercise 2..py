@@ -81,10 +81,8 @@ print("The fractional part of the real number is " + str(''.join(e)) + ".")
 
 
 # 8.
-x = 0
-for i in range(3):
-    a = int(input("Enter a three digit number..."))
-    x = x + a
+a = input("Enter a three digit number...")
+x = int(a[0]) + int(a[1]) + int(a[2])
 print(x)
 
 # 9.
