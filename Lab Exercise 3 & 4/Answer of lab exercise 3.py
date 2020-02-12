@@ -87,29 +87,46 @@ while c >= 0:
 print(d)
 
 # Q.NO.7
+def string(a, b):
+    return f"The number of upper Case is {a} and lower case is  {b}."
+
+
 A = input("Write a word...")
 x = ""
 y = ''
 for i in range(len(A)):
     if A[i].isupper() == True:
         x = x + A[i]
-print(f'The number of upper case is {len(x)}.')
+
 for j in range(len(A)):
     if A[j].islower() == True:
         y = y + A[j]
-print(f'The number of lower case is {len(y)}.')
+
+print(string(len(x), len(y)))
+
 # Q.NO.8
+def prime(a):
+    return f"The number is {a}."
+
+
 x = int(input("Enter a number..."))
-a = True
+y = True
 for i in range(2, x):
     if x % i == 0:
-        a = False
-if a == True:
-    print("This is a prime number.")
+        y = False
+if y == True:
+    p = "prime"
+    print(prime(p))
 else:
-    print("This is not a prime number.")
+    q = "not prime"
+    print(prime(q))
+
 
 # Q.NO.9
+def palindrome(a):
+    return f"The string is {a}."
+
+
 A = input("Write any word ")
 B = A.split()
 C = "".join(B)
@@ -120,9 +137,12 @@ while y >= 0:
     z = z + C[y]
     y = y - 1
 if C == z:
-    print("The string is palindrome.")
+    p = "palindrome"
+    print(palindrome(p))
 else:
-    print("The string is not palindrome.")
+    q = "not palindrome"
+    print(palindrome(q))
+
 
 # Q.NO.10
 P = input("Write any word...")
