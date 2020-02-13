@@ -136,3 +136,86 @@ Call = Controller()
 Call.window_changer(HomePage)
 Call.mainloop()
 
+
+# Just the solution of opening the required page not along with the constructor empty tkinter window
+import tkinter as tk
+from tkinter import messagebox
+
+
+class MainApp1(tk.Tk):
+    def __init__(self):
+        tk.Tk.__init__(self)
+        self._frame = None  # Instead of using "None", You can also use stings and numbers and "True", "False"
+# You can also use "self.frame" instead because "_" just make the variable private
+        self.switch_frame1(Login1)  # To call switch_frame function 'self.' needed as  you are in constructor
+
+    def switch_frame1(self, frame_class):
+        new_frame = frame_class(self)
+        if self._frame is not None:
+            self._frame.destroy()
+        self._frame = new_frame
+        self._frame.pack()
+
+
+class MainApp2(tk.Tk):
+    @classmethod
+    def switch_frame1(self, frame_class):
+        new_frame = frame_class(self)
+        self._frame = new_frame
+        self._frame.pack()
+
+
+
+
+class Login1(tk.Frame):
+    def __init__(self, main_master):
+        tk.Frame.__init__(self)
+        tk.Label(self, text='This is the Login Page.').pack()
+        tk.Button(self, text="Open Employee Page", command=lambda: main_master.switch_frame1(Employee1)).pack()
+        tk.Button(self, text='Open Department Page', command=lambda: main_master.switch_frame1(Department1)).pack()
+        tk.Button(self, text='Open College Page', command=lambda: main_master.switch_frame1(College1)).pack()
+
+
+class Employee1(tk.Frame):
+    def __init__(self, master1):
+        tk.Frame.__init__(self)
+        tk.Label(self, text="This is Employee Page.").pack()
+        self.Entry = tk.Entry(self, textvariable='')
+        self.Entry.pack()
+        tk.Button(self, text="Return to Login Page", command=lambda: master1.switch_frame1(Login1)).pack()
+        tk.Button(self, text="submit", command=self.submit).pack()
+
+    def submit(self):
+        try:
+            if self.Entry.get() == "gauri":
+                self.destroy()
+                MainApp2.switch_frame1(Success)
+
+        except:
+            messagebox.showinfo("Error!", "Error Input")
+
+class Department1(tk.Frame):
+    def __init__(self, master2):
+        tk.Frame.__init__(self)
+        tk.Label(self, text="This is Department Page.").pack()
+        tk.Button(self, text="Return to Login Page", command=lambda: master2.switch_frame1(Login1)).pack()
+
+
+class College1(tk.Frame):
+    def __init__(self, master3):
+        tk.Frame.__init__(self)
+        tk.Label(self, text="This is College Page.").pack()
+        tk.Button(self, text="Return to Login Page", command=lambda: master3.switch_frame1(Login1)).pack()
+
+
+class Success(tk.Frame):
+    def __init__(self, master3):
+        tk.Frame.__init__(self)
+        tk.Label(self, text="You have successfully submitted.").pack()
+        tk.Button(self, text="Return to Login Page", command=lambda: master3.switch_frame1(Login1)).pack()
+
+
+Calling = MainApp1()
+# Calling.switch_frame(Login) You can also call this function at last instead of calling in constructor
+Calling.mainloop()
+
