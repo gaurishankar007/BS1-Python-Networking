@@ -80,8 +80,36 @@ mainloop()
 
 
 
+# 4) Drop down Button
+import tkinter as tk
+A = tk.Tk()
+var1 = tk.StringVar()
+DL = tk.OptionMenu(A, var1, "1", "2", "123")
+DL.pack()
+DL.mainloop()
 
-# 4,5)Entry and Label:
+#
+from tkinter import *
+B = Tk()
+Var = StringVar()
+Var.set("Select any day")
+List = ["Thursday", "Friday", "Saturday"]
+Drop = OptionMenu(B, Var, "Sunday", "Monday", "Tuesday", "Wednesday", *List)
+Drop.pack()
+L = Label(B, text='')
+L.pack()
+
+
+def write():
+    L['text'] = Var.get()
+
+
+Button(B, text="Display", command=write).pack()
+mainloop()
+
+
+
+# 5,6)Entry and Label:
 from tkinter import *
 Master = Tk()
 Label(Master, text='First Name =').grid(row=0, sticky=W)
@@ -235,7 +263,7 @@ b4.grid(row=2, column=1)
 mainloop()
 
 
-# 6)Frame:
+# 7)Frame:
 from tkinter import *
 root = Tk()
 frame = Frame(root)
