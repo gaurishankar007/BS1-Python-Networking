@@ -25,6 +25,7 @@ print(S[1:])  # prints ""ython is cool""
 print(S[:3])  # prints ""Pyt""
 print(S[1:5:2])  # prints ""yh""
 print(S[:: -1])  # prints ""looc si nohtyP""
+print(S[::-3])  # ""lcioy"" including space
 
 
 # LIST COMPREHENSION:

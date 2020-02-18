@@ -8,6 +8,8 @@ except:
 
 
 # In this case, when the input is invalid then 'while loop' will again ask to enter valid value until value is correct
+# Its because when we put right value then while condition terminates(ends) because the value of "success" becomes True
+# But when we put wrong value the while condition does not terminate because the value of "success" remains False
 success = False
 while success == False:
     try:

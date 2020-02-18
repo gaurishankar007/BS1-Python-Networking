@@ -47,6 +47,22 @@ print(First_Customer.deposit(56080))
 First_Customer.B = 1000
 print(First_Customer.N + " has $" + str(First_Customer.B) + " in " + First_Customer.I + ".")
 
+# Creating a class and passing a method of that class
+class Pass:
+    def __init__(self, name, age):  # Note: It is necessary to declare
+        self.N = name  # Note: It is necessary to declare a self variable for name of the constructor
+        self.A = age  # Note: It is necessary to declare a self variable for age of the constructor
+
+    def id(self):  # pass means it will pass to the another function
+        pass  # here if you don't pass the empty function then it will produce error
+
+    def info(self):
+        pass  # But here pass does not play any role that it does nothing
+        return print(f"My name is {self.N} and I am {self.A} years old.")
+
+
+Me = Pass("Gauri Shankar Sharma", 18)
+Me.info()
 
 # Create a class student and find the total and average masks, highest mask and the topper name
 class Student():
@@ -308,7 +324,7 @@ class Calculation:
         return sum
 
 
-A = Calculation()
+A = Calculation()  # you must have to include the bracket even if there is no bracket while creating the class
 print(A.add(1, 2, 3))
 
 
@@ -366,7 +382,7 @@ print(A1.language())
 print(A1.status())
 
 
-# Access Modifiers
+# Access Modifiers along with polymorphism
 class Human:
     def __init__(self, name, age, skill, education):
         self.N = name

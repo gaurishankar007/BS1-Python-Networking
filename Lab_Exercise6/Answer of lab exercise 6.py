@@ -31,7 +31,7 @@ print(f"The sum of the list is {sum1(A, B)}.")
 
 def multiplication(a, b):
     if b == 1:
-        return b
+        return a
     else:
         return a * b
 

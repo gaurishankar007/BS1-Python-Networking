@@ -21,7 +21,7 @@ print("abc DEF".capitalize())  # Abc def
 #Shirshak
 print("""Gauri   
 Anuragh
-Shirshak""")
+Shirshak""")  # This is an example of docstring
 
 
 # Eval
@@ -30,6 +30,7 @@ b = '2'
 print(eval(a + b))  # 52
 print(eval(a) + eval(b))  # 7
 print(eval("1" + "2"))  # 12
+print(eval(" 1 + 6"))  # 7
 c = eval(input("Add two numbers"))  # it prints the sum of the two strings i.e. '2' + '3' = 5
 print(c)
 
@@ -39,7 +40,7 @@ List = [1, 2, 3, 4, 5]
 print(List*2)  # [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 
 
-# Tuple
+# set
 a = {1, 2, 3, 4}
 a.update([5, 6, 7, 2])
 print(a)

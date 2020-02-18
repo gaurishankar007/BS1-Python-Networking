@@ -1,7 +1,36 @@
 # printing items from the dictionary
 D = {"Roll No.": [1, 2, 3, 4, 5], "Name": ["Ram", "Syam", "Hari", "Sita", "Gita"]}
+print(D)
 print(D["Roll No."])
 print(D["Name"][3])
+
+
+# Another examples of dictionary
+p = {1: "2", True:3, 5.25:False, None:"haha", "a":3.45, 5:{1, 2, 3, 4}, "D":("a",  "z")}
+print(P)
+# But this dictionary is not actually a dictionary {[1, 2]: "d", "b": 2, (1, 3, 4): 2, {1, 2}: True}
+# That means list, tuple and set can not be regarded as the key of the dictionary but they could be regarded as the value of a key
+def exchanging_Key_and_value(InDictionary):
+    New_Dictionary = {}
+    for Key in InDictionary:
+        Value = InDictionary[Key]
+        try:
+            New_Dictionary[Value] = Key
+        except:
+            print("Value is not suitable as key")
+    return New_Dictionary
+
+
+# It will produce actual new dictionary
+print(exchanging_Key_and_value({1: None, False: 'b', 3: 'c'}))
+
+# It will not produce a new dictionary because the formed new dictionary is valid and goes to exception condition
+# It will produce only the valid part of the new formed dictionary
+print(exchanging_Key_and_value({1: [1, 2, 3], False: 'b', 3: 'c'}))
+
+
+
+
 # Printing the name of the students when the roll no. is entered
 a = int(input("Enter the Roll No."))
 for i in range(len(D['Roll No.'])):

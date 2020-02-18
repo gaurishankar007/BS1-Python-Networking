@@ -10,6 +10,7 @@ print(len(a))
 print(sum(b))
 print(max(b))
 print(min(b))
+print(a.update([6, 7, 8, 9]))
 
 # Create a 3 sets for fruits, with random items, now, i need to get data how many items among the  sets are repeated
 # And how many of them are unique, in total get all the unrepeated items

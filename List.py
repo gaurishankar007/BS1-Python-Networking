@@ -1,4 +1,4 @@
-A = [[1, 2, 3, 4, 5], "anup", "bishnu"]
+A = [[1, 2, 3, 4, 5], "anup", "bishnu", 1, 2, 3, 3, 4]
 # printing the particular items from the list
 print(A[0])
 print(A[0][4])
@@ -8,6 +8,11 @@ for i in A[0]:
     print(i)
 for j in A[2]:
     print(j)
+# Counting the number of specific items in the list
+print(A.count("anup"))  # 1
+print(A.count(1))  # 1
+print(A.count(3))  # 2
+print(A.count([1, 2, 3, 4, 5]))  # 1
 
 # Printing the numbers from the list one by one
 A = [[1, 2, 3, 4], [5, 6, 7, 8, 9]]
